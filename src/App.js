@@ -34,7 +34,7 @@ function App() {
         <ambientLight />
         <pointLight position={[10, 10, 10]} />
         {cubes.length > 0 &&
-          cubes.map((cube, i) => <Cube key={i} {...cube } easter_egg={ easter_egg } position={[-3.5 + 1.1* (i % 7), 2 - 1.1 * (Math.floor(i / 7)) , 0]} />)}
+          cubes.map((cube, i) => <Cube key={i} {...cube } easter_egg={ easter_egg } positionText={[-3.8 + 1.1* (i % 7), 2 - 1.1 * (Math.floor(i / 7)) , -0.25]} position={[-3.5 + 1.1* (i % 7), 2 - 1.1 * (Math.floor(i / 7)) , 0]} />)}
           </Canvas>
     </>
   );
